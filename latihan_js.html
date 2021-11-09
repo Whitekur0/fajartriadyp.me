@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p id='my-text' style="color: red;background-color: black; padding:10px;">Hello World!</p>
+    <button onclick="changeColor()">Click this to change the color of text</button>
+    <br />
+    <br />
+    <input type="text" id="my-input" />
+    <button onclick="addTodo()">Add Todo</button>
+
+    <ul id="my-list">
+
+    </ul>
+
+    <script>
+        function addTodo() {
+            let input = document.getElementById("my-input").value
+            var node = document.createElement("li"); // Membuat cabang <li>
+            var textnode = document.createTextNode(input); // Memasukkan teks ke cabang
+            document.getElementById("my-list").appendChild(node)
+            document.getElementById("my-input").value = ""
+        }
+    </script>
+
+</body>
+
+</html>
