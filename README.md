@@ -1,2 +1,1 @@
-sayang ninis
 
